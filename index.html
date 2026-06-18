@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Isaac Brock | Instagram</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    .header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .profile {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .pfp {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+
+    .username {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .stats {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 20px;
+    }
+
+    .post {
+      width: 100%;
+      padding-top: 100%;
+      background: #ddd;
+      position: relative;
+    }
+
+    .post::after {
+      content: "post";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #666;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">Instagram</div>
+    <div>Search 🔍</div>
+  </div>
+
+  <div class="profile">
+    <div class="top">
+      <div class="pfp"></div>
+      <div>
+        <div class="username">Isaac Brock</div>
+        <div class="stats">
+          12 posts • 340 followers • 180 following
+        </div>
+      </div>
+    </div>
+
+    <div class="posts">
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+      <div class="post"></div>
+    </div>
+  </div>
+
+</body>
+</html>
